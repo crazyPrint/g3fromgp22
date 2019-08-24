@@ -22,5 +22,6 @@ object TagKeyWord extends Tag{
       word.length>=3 && word.length <=8 && !stopword.value.contains(word)
     })
       .foreach(word=>list:+=("K"+word,1))
+    list
   }
 }
